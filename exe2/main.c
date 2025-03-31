@@ -114,17 +114,17 @@
     
         if (echo_flag) {
             int distancia = (int)((duration * 0.0343) / 2.0);
-            printf("Sensor 1 - dist: %d cm\n", distancia);
+            printf("Sensor 2 - dist: %d cm\n", distancia);
         } else if (alarm_flag) {
-            printf("Sensor 1 - dist: falha\n");
+            printf("Sensor 2 - dist: falha\n");
         }
         cancel_alarm(alarm);
     
         if (echo2_flag) {
             int distancia2 = (int)((duration2 * 0.0343) / 2.0);
-            printf("Sensor 2 - dist: %d cm\n", distancia2);
+            printf("Sensor 1 - dist: %d cm\n", distancia2);
         } else if (alarm2_flag) {
-            printf("Sensor 2 - dist: falha\n");
+            printf("Sensor 1 - dist: falha\n");
         }
         cancel_alarm(alarm2);
     }

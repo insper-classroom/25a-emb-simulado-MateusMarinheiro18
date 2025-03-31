@@ -92,7 +92,6 @@
      gpio_set_irq_enabled_with_callback(ECHO_PIN_2, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &echo_callback);
  
      while (true) {
-        printf("oi\n");
         sleep_ms(100);
     
         // Reset flags e cancelar alarmes pendentes
